@@ -1,0 +1,11 @@
+.c-location {
+  border-radius: 4px;
+  padding: 2.4rem;
+  color: $color-blue-primary;
+  background-color: $color-grey-100;
+  font-weight: 300;
+
+  &__icon {
+    margin-bottom: 1rem;
+  }
+}

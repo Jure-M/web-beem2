@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beta</title>
+    <script
+      src="https://kit.fontawesome.com/16c13fe069.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <!-- appbar -->
+    <header class="o-navBar">
+      <i class="fas fa-bars o-navBar__hamburger"></i>
+      <div class="c-logo">B_System</div>
+      <!-- nav -->
+      <div class="o-navBar__nav">
+        <nav class="primary-nav">
+          <ul class="primary-nav__list">
+            <li class="primary-nav__list-item">
+              <a class="primary-nav__link is-Active" href="#">Our Studio</a>
+            </li>
+            <li class="primary-nav__list-item">
+              <a class="primary-nav__link" href="#">Services</a>
+            </li>
+            <li class="primary-nav__list-item">
+              <a class="primary-nav__link" href="#">Designing for humans </a>
+            </li>
+            <li class="primary-nav__list-item">
+              <a class="primary-nav__link" href="#">Work</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- nav end -->
+      <div class="o-navBar__btn">
+        <button class="c-button c-button--transparent c-button--small">
+          Your area
+          <svg class="c-button__svg">
+            <use xlink:href="./img/sprite.svg#icon-avatar"></use>
+          </svg>
+        </button>
+      </div>
+      <svg class="o-navBar__avatar">
+        <use xlink:href="./img/sprite.svg#icon-avatar"></use>
+      </svg>
+    </header>
+    <!-- appbar end -->
+    <!-- hero  start-->
+    <div class="c-hero">
+      <div class="u-container">
+        <div class="l-hero">
+          <div class="l-hero__text-area">
+            <div class="c-hero__text">
+              <h1 class="heading-primary">We make magic!</h1>
+              <p class="para-lead para-lead--hero">
+                We are a freelance design studio passionate about rethinking how
+                things operate every day.
+              </p>
+              <button class="c-button c-button--transparent">
+                Meet B_System
+              </button>
+            </div>
+          </div>
+          <div class="l-hero__svg-area">
+            <svg class="c-hero__svg">
+              <use xlink:href="./img/sprite.svg#man-working"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- hero  end-->
+    <!--section introduction  -->
+    <section id="introduction">
+      <div class="u-container">
+        <div class="u-section-sm u-flex-center">
+          <div class="u-max-width-md">
+            <h2 class="heading-secondary u-text-center">What we do?</h2>
+            <p class="para-lead para-lead--grey u-text-center">
+              We design digital products, services, and sytems with the goal of
+              enriching and improving the way people use things. We put people
+              first, to design, build and launch experiences that redefine
+              industires in our constantly evolving digital era.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--section  end -->
+    <!--about section-->
+    <section id="about">
+      <div class="l-grid-4show">
+        <div class="l-grid-4show__one">
+          <div class="u-section-sm">
+            <h2 class="heading-secondary heading-secondary--white">
+              How do we do it?
+            </h2>
+            <p class="para-lead">
+              Putting our clients users at the center of the covnersation, and
+              giving solutions from design to complex problems. No matter the
+              size of the project we use these principles to gudide our way to
+              create impact.
+            </p>
+            <button class="c-button c-button--small c-button--no-border">
+              Learn more ->
+            </button>
+          </div>
+        </div>
+        <div class="l-grid-4show__two">
+          <img src="./img/man-working-l.jpg" alt="man working" />
+        </div>
+
+        <div class="l-grid-4show__three">
+          <svg class="l-about-grid__svg">
+            <use xlink:href="./img/sprite.svg#desk"></use>
+          </svg>
+        </div>
+        <div class="l-grid-4show__four">
+          <div class="u-section-sm">
+            <h2 class="heading-secondary heading-secondary--white">
+              Our values
+            </h2>
+            <!--accordian-->
+            <div class="c-accordian" id="accordian-about">
+              <!--accordian fist item-->
+              <div class="c-accordian__item" data-id="0">
+                <div class="c-accordian__heading">
+                  <h5 class="c-accordian__title">
+                    Simple and intuitive design
+                  </h5>
+                  <i class="c-accordian__icon fas fa-minus"></i>
+                </div>
+                <p class="c-accordian__body is-active" data-tab="0">
+                  If design works in your mind, it works in your heart and so it
+                  goes
+                </p>
+              </div>
+              <!--accordian second item-->
+              <div class="c-accordian__item" data-id="1">
+                <div class="c-accordian__heading">
+                  <h5 class="c-accordian__title">
+                    Emotions and data in the same bag
+                  </h5>
+                  <i class="c-accordian__icon fas fa-plus"></i>
+                </div>
+                <p class="c-accordian__body" data-tab="1">
+                  If design works in your mind, it works in your heart
+                </p>
+              </div>
+              <!--accordian third item-->
+              <div class="c-accordian__item" data-id="2">
+                <div class="c-accordian__heading">
+                  <h5 class="c-accordian__title">Curiosity rules the study</h5>
+                  <i class="c-accordian__icon fas fa-plus"></i>
+                </div>
+                <p class="c-accordian__body" data-tab="2">
+                  If design works in your mind, it works in your heart
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--about section end-->
+    <!-- contact us section-->
+    <section id="contact-us">
+      <div class="u-container">
+        <div class="u-section-sm">
+          <div class="l-contact-us">
+            <!-- contact us form -->
+            <div class="l-contact-us__form-area">
+              <h2 class="heading-secondary">Contact us!</h2>
+              <p class="para-lead para-lead--black">
+                Please fill out this form to send your message
+              </p>
+              <div class="c-input">
+                <input
+                  class="c-input__field"
+                  id="name"
+                  type="text"
+                  required
+                  autocomplete="off"
+                />
+                <label class="c-input__label" for="name">Name</label>
+              </div>
+              <div class="c-input">
+                <input
+                  class="c-input__field"
+                  id="surname"
+                  type="text"
+                  required
+                  autocomplete="off"
+                />
+                <label class="c-input__label" for="surname">Surname</label>
+              </div>
+              <div class="c-input">
+                <input
+                  class="c-input__field"
+                  id="Email"
+                  type="text"
+                  required
+                  autocomplete="off"
+                />
+                <label class="c-input__label" for="Email">Email</label>
+              </div>
+              <div class="c-input">
+                <input
+                  class="c-input__field"
+                  id="Subject"
+                  type="text"
+                  required
+                  autocomplete="off"
+                />
+                <label class="c-input__label" for="Subject">Subject</label>
+              </div>
+              <div class="c-input">
+                <textarea
+                  class="c-input__field"
+                  rows="4"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="c-checkbox u-mb-sm">
+                <input class="c-checkbox__field" type="checkbox" />
+                <span class="c-checkbox__text"
+                  >I authorize the treatment of my data</span
+                >
+              </div>
+              <button class="c-button c-button--small c-button--wide">
+                Send
+              </button>
+            </div>
+            <!-- contact us end -->
+            <div class="l-contact-us__info-area">
+              <div class="c-contact-tel u-mb-sm">
+                <div class="c-contact-tel__img">img</div>
+                <p class="c-contact-tel__msg">
+                  If you have an urgent query you can call us:
+                </p>
+                <p>T.(+34) 915 805 007</p>
+                <p>T.(+34) 915 806 082</p>
+              </div>
+              <div class="c-location">
+                <i class="c-location__icon fas fa-map-marker-alt"></i>
+                <p>Find out offices easily in our search enginge</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact us section end-->
+    <section id="cta">
+      <div class="u-section-sm u-section-sm--grey">
+        <div class="u-container">
+          <div class="c-text-section__inner">
+            <p class="c-text-section__para para-lead para-lead--grey">
+              Do you want to start with B-sytem today?
+            </p>
+            <button class="c-button">Start with B_system</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- social media section start -->
+    <section id="social">
+      <div class="u-section-sm">
+        <div class="u-container u-flex-center u-max-width-md">
+          <div class="c-icons-list">
+            <i class="fab fa-behance c-icons-list__icon"></i>
+            <i class="fab fa-youtube c-icons-list__icon"></i>
+            <i class="fab fa-pinterest c-icons-list__icon"></i>
+            <i class="fab fa-twitter c-icons-list__icon"></i>
+            <i class="fab fa-linkedin-in c-icons-list__icon"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- social media section end -->
+    <!--footer start-->
+    <footer id="footer" class="l-footer">
+      <div class="u-section-sm">
+        <div class="u-container u-text-center">
+          <div class="c-logo c-logo--grey u-mb-sm">B_System</div>
+          <p class="footer__text">
+            Organic Design Systerm &copy; 2019 B_system. All rights reserved
+            example
+          </p>
+          <p class="footer__text">Customer Service 125 231 012</p>
+        </div>
+      </div>
+    </footer>
+    <!--footer end-->
+  </body>
+</html>

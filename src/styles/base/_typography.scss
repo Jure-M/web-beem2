@@ -1,0 +1,57 @@
+.heading-primary {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $color-white;
+  margin-bottom: 3rem;
+
+  @include respond(tab-port) {
+    font-size: 4rem;
+  }
+  @include respond(desktop) {
+    font-size: 6.4rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $color-black;
+  margin-bottom: 2rem;
+
+  @include respond(desktop) {
+    font-size: 4rem;
+  }
+
+  &--white {
+    color: $color-white;
+  }
+}
+
+.para-lead {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: $color-white;
+  margin-bottom: 2rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--grey {
+    color: $color-grey;
+  }
+
+  &--black {
+    color: $color-black;
+  }
+
+  &--hero {
+    text-align: center;
+
+    @include respond(tab-port) {
+      text-align: left;
+    }
+  }
+}

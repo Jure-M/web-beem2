@@ -1,0 +1,51 @@
+.u-container {
+  max-width: 118rem;
+  margin: 0 auto;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+.u-section-sm {
+  padding: 3rem 0;
+
+  &--grey {
+    background-color: $color-grey-100;
+  }
+
+  @include respond(tab-land) {
+    padding: 2.5rem 0;
+  }
+
+  @include respond(desktop) {
+    padding: 4rem 0;
+  }
+
+  @include respond(big-desktop) {
+    padding: 7rem 0;
+  }
+}
+
+.u-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.u-max-width-md {
+  max-width: 90%;
+
+  @include respond(tab-land) {
+    max-width: 75%;
+  }
+  @include respond(desktop) {
+    max-width: 60%;
+  }
+}
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-mb-sm {
+  margin-bottom: 2rem;
+}

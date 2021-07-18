@@ -1,0 +1,42 @@
+.c-hero {
+  background-color: $color-blue-primary;
+
+  &__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
+    @include respond(tab-port) {
+      align-items: flex-start;
+      max-width: 35rem;
+      margin-left: 6rem;
+    }
+
+    @include respond(desktop) {
+      align-items: flex-start;
+      max-width: 35rem;
+      margin-left: 4rem;
+    }
+  }
+
+  &__svg {
+    width: 80vw;
+    height: 80vw;
+    @include respond(tab-port) {
+      width: 43vw;
+      height: 43vw;
+    }
+    @include respond(desktop) {
+      width: 35vw;
+      height: 35vw;
+    }
+    @include respond(big-desktop) {
+      width: 30vw;
+      height: 30vw;
+    }
+  }
+}

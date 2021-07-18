@@ -1,0 +1,27 @@
+.primary-nav {
+  height: 100%;
+  display: flex;
+  color: $color-white;
+
+  &__list {
+    display: flex;
+    align-items: stretch;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+    padding: 1.7rem;
+
+    &:hover {
+      background-color: $color-blue-dark;
+    }
+    &.is-Active {
+      background-color: $color-blue-dark;
+      font-weight: 700;
+    }
+  }
+}

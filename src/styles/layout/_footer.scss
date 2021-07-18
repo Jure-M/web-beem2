@@ -1,0 +1,10 @@
+.l-footer {
+  border-top: 2px solid $color-grey-100;
+
+  &__text {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: $color-grey;
+    margin-bottom: 1rem;
+  }
+}

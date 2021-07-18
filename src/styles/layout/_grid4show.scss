@@ -1,0 +1,49 @@
+.l-grid-4show {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, minmax(min-content, 59rem)) 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  background-color: $color-blue-primary;
+
+  @include respond(tab-land) {
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  &__one {
+    grid-column: 1/5;
+    @extend %flex-center;
+
+    @include respond(tab-land) {
+      grid-column: 2/3;
+    }
+  }
+
+  &__two {
+    grid-column: 1/5;
+    order: -1;
+    @include respond(tab-land) {
+      grid-column: 3/5;
+      order: unset;
+    }
+  }
+
+  &__three {
+    grid-column: 1/5;
+    @extend %flex-center;
+    background-color: $color-blue-dark;
+
+    @include respond(tab-land) {
+      grid-column: 1/3;
+    }
+  }
+
+  &__four {
+    grid-column: 1/5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include respond(tab-land) {
+      grid-column: 3/4;
+    }
+  }
+}

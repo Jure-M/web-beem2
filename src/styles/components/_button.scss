@@ -1,0 +1,50 @@
+.c-button {
+  color: $color-white;
+  background-color: $color-blue-primary;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  padding: 1.2rem 2.4rem;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &--small {
+    padding: 0.8rem 1.5rem;
+  }
+
+  &--wide {
+    width: 30rem;
+  }
+
+  &--transparent {
+    color: $color-white;
+    background-color: transparent;
+    border: 1px solid $color-white;
+
+    &:hover,
+    &:active {
+      color: $color-blue-primary;
+      background-color: $color-white;
+      border: 1px solid $color-blue-primary;
+    }
+  }
+
+  &--no-border {
+    padding: 1.2rem 0;
+    border: 1px solid transparent;
+
+    &:hover,
+    &:active {
+      border-bottom: 1px solid $color-white;
+      border-radius: 0;
+    }
+  }
+
+  &__svg {
+    height: 1.8rem;
+    width: 1.7rem;
+    align-self: center;
+    margin-left: 0.7rem;
+  }
+}

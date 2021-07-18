@@ -1,0 +1,14 @@
+.l-about {
+  position: relative;
+  background-color: $color-blue-primary;
+  overflow-y: hidden;
+
+  &__row {
+    width: 100%;
+
+    @include respond(tab-land) {
+      padding-right: 1rem;
+      width: 50%;
+    }
+  }
+}

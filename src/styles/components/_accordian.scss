@@ -1,0 +1,39 @@
+.c-accordian {
+  min-width: 45rem;
+
+  &__item {
+    margin-bottom: 1.6rem;
+  }
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid $color-white;
+    margin-bottom: 1.4rem;
+    cursor: pointer;
+  }
+
+  &__title {
+    color: $color-white;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+  }
+
+  &__icon {
+    color: $color-white;
+    padding: 0.2em;
+  }
+
+  &__body {
+    color: $color-white;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+    display: none;
+
+    &.is-active {
+      display: block;
+    }
+  }
+}

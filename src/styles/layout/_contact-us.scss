@@ -1,0 +1,28 @@
+.l-contact-us {
+  @include respond(tab-port) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form-area {
+    margin-bottom: 4rem;
+
+    @include respond(tab-port) {
+      flex: 0 0 50%;
+      margin-bottom: 0rem;
+    }
+    @include respond(tab-land) {
+      min-width: 55rem;
+    }
+  }
+
+  &__info-area {
+    @include respond(tab-port) {
+      flex: 1;
+      margin-left: 3rem;
+    }
+    @include respond(tab-land) {
+      margin-left: 7rem;
+    }
+  }
+}

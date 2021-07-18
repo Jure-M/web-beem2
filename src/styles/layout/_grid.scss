@@ -1,0 +1,21 @@
+.row {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .col-1of-2 {
+    flex: 0 0 100%;
+    @include respond(tab-port) {
+      flex: 0 0 49%;
+      height: 100%;
+    }
+
+    &--inverse {
+      order: -1;
+      @include respond(tab-port) {
+        order: unset;
+      }
+    }
+  }
+}

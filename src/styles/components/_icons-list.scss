@@ -1,0 +1,12 @@
+.c-icons-list {
+  font-size: 3rem;
+
+  &__icon {
+    cursor: pointer;
+    margin-right: 2rem;
+
+    &::last-child {
+      margin-right: 0;
+    }
+  }
+}

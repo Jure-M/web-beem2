@@ -1,0 +1,38 @@
+.l-hero {
+  min-height: calc(100vh - 4.8rem);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include respond(desktop) {
+    min-height: calc(100vh - 7.6rem);
+  }
+
+  &__text-area {
+    flex: 0 0 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    @include respond(tab-port) {
+      flex: 0 0 44%;
+      margin-bottom: 0rem;
+    }
+  }
+
+  &__svg-area {
+    @extend %flex-center;
+    flex: 0 0 100%;
+    order: -1;
+    margin-bottom: 3rem;
+
+    @include respond(tab-port) {
+      flex: 0 0 55%;
+      order: unset;
+    }
+
+    @include respond(desktop) {
+      min-heigh: calc(100vh - 7.6rem);
+    }
+  }
+}

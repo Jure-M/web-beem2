@@ -1,0 +1,39 @@
+.c-input {
+  position: relative;
+  margin-bottom: 1.6rem;
+  font-family: $font-normal;
+
+  &__label {
+    position: absolute;
+    left: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-grey;
+    transition: all 0.2s;
+  }
+
+  &__field {
+    width: 100%;
+    padding: 1.8rem 0.5rem 0.4rem 1.2rem;
+    font-size: 1.8rem;
+    border: 1px solid $color-grey;
+    border-radius: 3px;
+
+    &:focus {
+      border: 1px solid $color-blue-primary;
+      outline: none;
+    }
+
+    &:focus + .c-input__label,
+    &:active + .c-input__label,
+    &:valid + .c-input__label {
+      top: 1rem;
+      font-size: 1.2rem;
+      color: $color-grey-light;
+    }
+
+    &::placeholder {
+      color: $color-grey;
+    }
+  }
+}
